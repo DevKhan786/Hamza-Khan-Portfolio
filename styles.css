@@ -257,7 +257,6 @@ h4:hover,
   box-shadow: 0 0 50px rgb(218, 185, 0);
 }
 
-
 #projects {
   padding: 100px 20px;
   background-color: #fff;
@@ -278,8 +277,6 @@ h4:hover,
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
   place-items: center;
-  
-  
 }
 
 .project {
@@ -325,20 +322,19 @@ h4:hover,
 
 @media (max-width: 600px) {
   #projects h2 {
-      font-size: 3em;
+    font-size: 3em;
   }
 
   .project-info h3 {
-      font-size: 1.2em;
+    font-size: 1.2em;
   }
 
   .project-info p {
-      font-size: 0.9em;
+    font-size: 0.9em;
   }
 }
 
-@media (min-width:500px){
-
+@media (min-width: 500px) {
   .about-div {
     display: flex;
     flex-direction: column;
@@ -352,7 +348,7 @@ h4:hover,
     font-size: 0.7rem;
   }
 
-  .bigger{
+  .bigger {
     font-size: 1rem;
   }
 
@@ -361,7 +357,7 @@ h4:hover,
     display: flex;
     opacity: 0.5;
   }
-  
+
   .resume-button {
     display: flex;
     flex-direction: column;
@@ -370,11 +366,9 @@ h4:hover,
     flex: 1;
     transform: scale(1);
   }
-
 }
 
 @media (min-width: 640px) {
-
   #projects {
     padding: 100px 20px;
     background-color: #fff;
@@ -393,7 +387,7 @@ h4:hover,
     flex: 1;
     transform: scale(1);
   }
-  
+
   .About-section {
     display: flex;
     flex-direction: column;
@@ -417,7 +411,7 @@ h4:hover,
     max-width: 500px;
   }
 
-  .bigger{
+  .bigger {
     font-size: 1.5rem;
   }
 
@@ -425,7 +419,7 @@ h4:hover,
     font-size: 0.8rem;
   }
 
-  .main-text p{
+  .main-text p {
     font-size: 0.8rem;
   }
 }
