@@ -191,11 +191,52 @@
           </div>
         </div>
       </section>
-      <!-- <section id="contact" class="Contact-section"> 
-        <div>
-          <h2>To be added...</h2>
+      <section id="contact" class="Contact-section">
+        <div class="Contact-heading">
+          <h4>Contact me</h4>
+          <p>
+            Send a message
+            <span class="lightText">so we can work together.</span>
+          </p>
         </div>
-      </section>-->
+        <div class="Contact-body">
+          <form action="https://formspree.io/f/myzgkzln" method="POST">
+            <input
+              type="text"
+              name="first"
+              placeholder="First Name"
+              autocomplete="off"
+              required
+            />
+            <input
+              type="text"
+              name="last"
+              placeholder="Last Name"
+              autocomplete="off"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Email"
+              autocomplete="off"
+              required
+            />
+            <textarea
+              rows="5"
+              cols="50"
+              name="message"
+              autocomplete="off"
+              placeholder="Message here"
+              required
+            ></textarea>
+            <button type="submit">Send</button>
+          </form>
+        </div>
+        <a href="#home" class="scroll-up">
+          <i class="fa-solid fa-arrow-up"></i>
+        </a>
+      </section>
     </main>
   </body>
 </html>
