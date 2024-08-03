@@ -142,7 +142,7 @@ h4:hover,
     transform: translateY(0);
   }
   100% {
-    transform: translateY(80px);
+    transform: translateY(40px);
   }
 }
 
@@ -403,6 +403,7 @@ textarea:focus-within {
   bottom: 5%;
   border-radius: 100px;
   opacity: 0.5;
+  animation: pointdown 1s infinite alternate-reverse;
 }
 
 .scroll-up:hover {
