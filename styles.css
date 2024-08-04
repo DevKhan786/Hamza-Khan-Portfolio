@@ -460,10 +460,10 @@ textarea:focus-within {
 
 .project-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px; 
   align-items: stretch; 
-  margin-left: 100px;
+  margin-right: 75px;
   justify-content: center;
 }
 
