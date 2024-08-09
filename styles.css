@@ -264,7 +264,6 @@ h4:hover,
   text-align: center;
   flex-direction: column;
   min-height: 100vh;
-  gap: 50px;
 }
 
 #projects h2 {
@@ -451,7 +450,7 @@ textarea:focus-within {
   min-height: 100vh;
   justify-content: center;
   align-items: center;
-  gap: 50px;
+  gap: 40px;
 }
 
 #projects h2 {
@@ -616,7 +615,7 @@ textarea:focus-within {
     min-height: 100vh;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 40px;
   }
   
   #projects h2 {
@@ -658,7 +657,7 @@ textarea:focus-within {
     text-align: center;
     flex-direction: column;
     min-height: 100vh;
-    gap: 120px;
+    gap: 40px;
   }
 
   input:focus-within,
@@ -725,9 +724,20 @@ textarea:focus-within {
 
   .project-container {
     display: grid;
-    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    grid-template-columns: repeat(1, minmax(200px, 1fr));
     place-items: center;
     gap: 100px;
+  }
+
+  #projects{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  #projects h2{
+    margin-left: 40px;
   }
 
   .Contact-section form {
