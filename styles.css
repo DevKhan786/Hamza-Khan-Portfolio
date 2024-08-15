@@ -45,7 +45,6 @@ a:hover {
   cursor: pointer;
 }
 
-
 nav {
   position: fixed;
   display: flex;
@@ -273,11 +272,10 @@ h4:hover,
 .project-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px; 
-  align-items: stretch; 
+  gap: 20px;
+  align-items: stretch;
   margin-left: 35px;
 }
-
 
 .project {
   border: 1px solid #ddd;
@@ -287,30 +285,33 @@ h4:hover,
   max-width: 350px;
   text-align: center;
   padding: 20px;
-  min-height: 700px; 
+  min-height: 700px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border-radius: 30px;
-
-  
 }
-
-.project:hover{
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 1);
-}
-
 
 .project img {
   max-width: 100%;
-  max-height: 400; 
-  object-fit: contain; 
+  max-height: 400px; /* Ensure a consistent height */
+  object-fit: cover; /* Ensure the image covers the container */
+  border-radius: 15px; /* Add rounded corners for a softer look */
+  transition: box-shadow 0.3s; /* Add smooth transition for shadow */
+}
+
+.project img:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7); /* More prominent shadow on hover */
+}
+
+button:active{
+  transform: scale(0.95);
 }
 
 
 .project-info {
-  padding: 20px;
+  padding: 15px;
 }
 
 .project-info h3 {
@@ -326,14 +327,18 @@ h4:hover,
 .project-info a {
   display: inline-block;
   padding: 10px 20px;
-
   text-decoration: none;
   border-radius: 5px;
-  transition: background-color 0.3s;
+  background-color: #333; /* Dark background for better contrast */
+  color: white; /* Text color */
+  font-weight: bold; /* Make text bold */
+  transition: background-color 0.3s, color 0.3s, transform 0.3s; /* Smooth transitions */
 }
 
-.project:hover {
-  transform: scale(1.05);
+.project-info a:hover {
+  background-color: #f0a; /* Change background color on hover */
+  color: #000; /* Change text color on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
 }
 
 .Contact-section {
@@ -433,86 +438,79 @@ textarea:focus-within {
     font-size: 0.9em;
   }
 
-  .project-container{
+  .project-container {
     gap: 100px;
   }
-
 }
 
-@media (max-width: 376px){
+@media (max-width: 376px) {
+  #projects {
+    background-color: #fff;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
 
-  
-#projects {
-  background-color: #fff;
-  display: flex;
-  text-align: center;
-  flex-direction: column;
-  min-height: 100vh;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
-}
+  #projects h2 {
+    font-size: 3rem;
+  }
 
-#projects h2 {
-  font-size: 3rem;
-}
+  .project-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    align-items: stretch;
+    margin-right: 75px;
+    justify-content: center;
+  }
 
-.project-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px; 
-  align-items: stretch; 
-  margin-right: 75px;
-  justify-content: center;
-}
+  .project {
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s;
+    max-width: 350px;
+    text-align: center;
+    padding: 20px;
+    min-height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+  }
 
+  .project img {
+    max-width: 100%;
+    max-height: 400;
+    object-fit: contain;
+  }
 
-.project {
-  border: 1px solid #ddd;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-  transition: transform 0.3s;
-  max-width: 350px;
-  text-align: center;
-  padding: 20px;
-  min-height: 700px; 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-radius: 30px;
-}
+  .project-info {
+    padding: 20px;
+  }
 
+  .project-info h3 {
+    margin: 0 0 10px;
+    font-size: 1.5em;
+  }
 
-.project img {
-  max-width: 100%;
-  max-height: 400; 
-  object-fit: contain; 
-}
+  .project-info p {
+    font-size: 1em;
+    margin-bottom: 20px;
+  }
 
+  .project-info a {
+    display: inline-block;
+    padding: 10px 20px;
 
-.project-info {
-  padding: 20px;
-}
-
-.project-info h3 {
-  margin: 0 0 10px;
-  font-size: 1.5em;
-}
-
-.project-info p {
-  font-size: 1em;
-  margin-bottom: 20px;
-}
-
-.project-info a {
-  display: inline-block;
-  padding: 10px 20px;
-
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s;
-}
-
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
 }
 
 @media (max-width: 450px) {
@@ -534,9 +532,7 @@ textarea:focus-within {
   .project img {
     width: 100%;
     height: auto;
-    
   }
-  
 
   .project-info {
     padding: 5px;
@@ -617,21 +613,20 @@ textarea:focus-within {
     align-items: center;
     gap: 40px;
   }
-  
+
   #projects h2 {
     font-size: 3rem;
   }
-  
+
   .project-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px; 
-    align-items: stretch; 
+    gap: 20px;
+    align-items: stretch;
     margin-left: 30px;
     justify-content: center;
   }
-  
-  
+
   .project {
     border: 1px solid #ddd;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
@@ -639,14 +634,13 @@ textarea:focus-within {
     max-width: 350px;
     text-align: center;
     padding: 20px;
-    min-height: 700px; 
+    min-height: 700px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 30px;
   }
-  
 }
 
 @media (min-width: 640px) {
@@ -724,19 +718,19 @@ textarea:focus-within {
 
   .project-container {
     display: grid;
-    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
     place-items: center;
     gap: 100px;
   }
 
-  #projects{
+  #projects {
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
   }
 
-  #projects h2{
+  #projects h2 {
     margin-left: 40px;
   }
 
